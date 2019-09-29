@@ -1,4 +1,20 @@
-export const tetrominos = {
+type Array0 = [number][]
+type ArrayI = [number, string, number, number][]
+type ArrayJ = [[number, string, number],[number, string, number],[string, string, number]]
+type ArrayL = [[number, string, number],[number, string, number],[number, string, string]]
+type ArrayO = [string, string][]
+type ArrayS = [[number, string, string],[number, string, number],[string, string, number]]
+type ArrayT = [[string, string, string],[number, string, number]]
+type ArrayZ = [[string, string, number],[number, string, number],[number, string, string]]
+
+interface Tetrominos {
+  [key: string]: {
+    shape: Array0 | ArrayJ | ArrayL | ArrayI | ArrayO | ArrayS | ArrayT | ArrayZ
+    color: string
+  }
+}
+
+export const tetrominos: Tetrominos = {
   0: {
     shape: [[0]],
     color: '0, 0, 0'
