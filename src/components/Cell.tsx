@@ -1,12 +1,12 @@
 import React, { FC } from 'react'
 
 interface CellProps {
-  type: string
+  type: number
 }
 
 const Cell: FC<CellProps> = ({ type }) => (
   <div>
-    CEll - {type}
+    {type}
   </div>
 )
 export default Cell
