@@ -22,7 +22,7 @@ const Tetris = () => {
 }
 
 const StyledTetris = styled.div`
-
+  font-family: 'Arcade Classic'
 `
 
 export default Tetris
