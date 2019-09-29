@@ -6,7 +6,7 @@ interface StartBtnProps {
 }
 
 const StartBtn: FC<StartBtnProps> = ({ callback }) => (
-  <StyledStartBtn onClick={callback}>
+  <StyledStartBtn className='start-btn' onClick={callback}>
     StartBtn
   </StyledStartBtn>
 )

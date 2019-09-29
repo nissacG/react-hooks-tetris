@@ -7,7 +7,7 @@ interface StageProps {
 }
 
 const Stage: FC<StageProps> = ({ stage }) => (
-  <StyledStage>
+  <StyledStage className='stage'>
     {
       stage.map((row: any[]) => (
         row.map((cell: any[], index: number ) => (

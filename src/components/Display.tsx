@@ -7,7 +7,7 @@ interface DisplayProps {
 }
 
 const Display: FC<DisplayProps> = ({ gameOver, text }) => (
-  <StyledDisplay>
+  <StyledDisplay className='display'>
     Display
   </StyledDisplay>
 )
