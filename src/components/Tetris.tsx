@@ -33,10 +33,10 @@ const StyledTetris = styled.div`
   overflow: hidden;
 
   & .tetris {
+    height: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 40px;
+    align-items: center;
+    justify-content: space-around;
     margin: 0 auto;
     max-width: 900px;
 
