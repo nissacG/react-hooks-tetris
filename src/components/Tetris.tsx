@@ -4,13 +4,13 @@ import Stage from './Stage'
 import Display from './Display'
 import StartBtn from './StartBtn'
 
-
+import { createStage } from '../gameHelper'
 
 const Tetris = () => {
 
   return (
     <StyledTetris>
-      {/* <Stage /> */}
+      <Stage stage={createStage()}/>
       <aside>
         <Display text='Score' />
         <Display text='Rows' />
