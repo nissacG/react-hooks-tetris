@@ -12,7 +12,7 @@ interface Styled {
 }
 
 const Cell: FC<CellProps> = ({ type }) => (
-  <StyledCell type={'L'} color={tetrominos['L'].color} />
+  <StyledCell type={type} color={tetrominos[type].color} />
 )
 
 
