@@ -75,3 +75,7 @@ export const tetrominos: Tetrominos = {
     color: '240, 0, 0'
   }
 }
+
+export const randomTetromino = (): any => { // add correct typing for returning object
+  return Math.floor(Math.random() * Object.keys(tetrominos).length)
+}
