@@ -6,6 +6,8 @@ import StartBtn from './StartBtn'
 
 import bgImage from '../img/retro-bg.jpg'
 
+import { createStage } from '../gameHelpers'
+
 import { usePlayer } from '../hooks/usePlayer'
 import { useStage } from '../hooks/useStage'
 
@@ -16,13 +18,38 @@ const Tetris = () => {
 
   const [player] = usePlayer()
 
-  const [stage, setStage] = useStage(player)
+  // const [stage, setStage] = useStage(player)
+  const [stage, setStage] = useStage()
+
+  const movePlayer = (direction: string) => {
+
+  }
+  
+  const startGame = () => {
+
+  }
+  
+  const drop = () => {
+
+  }
+  
+  const dropPlayer = () => {
+
+  }
+  
+  const move = (e: any) => { // amend typing to allow for destructuring
+    console.log(e)
+    console.log(e.keyCode)
+  }
 
   return (
-    <StyledTetris className='tetris-wrapper'>
+    <StyledTetris className='tetris-wrapper' role='button' tabIndex={0} onKeyDown={e => move(e)} >
       <div className='tetris'>
-        <Stage stage={stage}/>
+        <Stage stage={stage}/> 
         <aside>
+          {
+            gameOver && <Display text='Game Over' gameOver />
+          }
           <Display text='Score' />
           <Display text='Rows' />
           <Display text='Level' />
